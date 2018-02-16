@@ -1,0 +1,37 @@
+.header {
+   //   position: absolute;
+   &__container {}
+   &__row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__leftSide {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%;
+      //      justify-content: space-around;
+   }
+   &__rightSide {
+      //      width: 50%;
+      //      justify-content: flex-end;
+   }
+   &__hamburger {
+      margin-right: 20px;
+      border: none;
+      background-color: transparent;
+
+   }
+   &__fas {
+      font-size: 60px;
+   }
+   &__logoLink {
+      @include fontStyler ($roboto, 60px, black, 400);
+      text-decoration: none;
+      line-height: inherit;
+   }
+   &__nav {}
+}
